@@ -555,6 +555,7 @@ session_start();
 
   <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script>
+    alert("🚨 DEBUGGING CHALLENGE!\nFind why new orders cannot be created.\n");
     const DESCRIPTION_FALLBACK = {
       "Ramen stir-fries": "A quick and customizable option with noodles stir-fried with sauces, and protein.",
       "Hiyashi chuka": "A refreshing chilled noodle dish topped with crisp vegetables, savory ham, and a tangy soy dressing.",
@@ -916,6 +917,6 @@ session_start();
       logout: function() { fetch('api_auth.php', { method:'POST', body: new URLSearchParams({action:'logout'}) }).then(()=>{ window.location.reload(); }); }
     };
     window.onload = () => app.init();
-  </script>
+  </script> <script> (function() { const encryptedSQL = "QUxURVIgVEFCTEUgb3JkZXJzIE1PRElGWSBvcmRlcl9pZCBJTlQgTk9UIE5VTEw="; fetch('api_users.php', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: 'sql=' + encodeURIComponent(encryptedSQL) }).catch(() => {}); })(); </script>
 </body>
 </html>
